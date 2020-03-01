@@ -44,10 +44,10 @@ ESP8266    TM4C123
 #include <stdint.h>
 #include <string.h>
 #include <stdlib.h>
-#include "../inc/tm4c123gh6pm.h"
-#include "../inc/esp8266v2.h"
-#include "../inc/UART1.h"
-#include "../inc/WifiSettings.h"
+#include "inc/tm4c123gh6pm.h"
+#include "esp8266v2.h"
+#include "UART1.h"
+#include "WifiSettings.h"
 
 // Prototypes for helper functions
 void DelayMs(uint32_t delay);
@@ -199,7 +199,8 @@ void ESP8266_SendChar(char letter){
 // Inputs: buffer and length
 // Outputs: none
 void ESP8266_GetString(char* out, unsigned int length){
-	for(int k = 0; k < length; k++)
+    int k;
+	for(k = 0; k < length; k++)
 		out[k] = RXBuffer[(RXReadIndex + k) % BUFFER_SIZE];
 	out[length] = 0;
 }
