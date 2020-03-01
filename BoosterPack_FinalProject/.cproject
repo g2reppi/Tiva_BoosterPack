@@ -78,7 +78,7 @@
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
-						<entry excluding="UART1int.c|esp8266PortD.c|esp8266.c|Adafruit_ILI9341.cpp" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+						<entry excluding="esp8266.c|main.c|UART1.c|UART1int.c|Adafruit_ILI9341.cpp|esp8266v2.c" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
@@ -168,4 +168,5 @@
 		<project id="BoosterPack_FinalProject.com.ti.ccstudio.buildDefinitions.TMS470.ProjectType.1197565019" name="TMS470" projectType="com.ti.ccstudio.buildDefinitions.TMS470.ProjectType"/>
 	</storageModule>
 	<storageModule moduleId="scannerConfiguration"/>
+	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
 </cproject>

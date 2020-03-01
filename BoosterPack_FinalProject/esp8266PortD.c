@@ -52,11 +52,11 @@ ESP8266    TM4C123
 #include <stdint.h>
 #include <string.h>
 #include <stdlib.h>
-#include "../inc/tm4c123gh6pm.h"
-#include "../inc/esp8266.h"
-#include "../inc/UART0int.h"
-#include "../inc/WifiSettings.h"
-#include "../inc/CortexM.h"
+#include "inc/tm4c123gh6pm.h"
+#include "esp8266PortD.h"
+#include "UART0int.h"
+#include "WifiSettings.h"
+#include "CortexM.h"
 
 // Access point parameters in WifiSettings.h
 
